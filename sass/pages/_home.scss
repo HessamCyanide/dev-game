@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+}
+.hgame {
+  @include Reaponsive(tablet) {
+    width: 100%;
+  }
+  width: 83%;
+}

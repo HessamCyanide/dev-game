@@ -1,0 +1,103 @@
+//Best-Content Style
+.best {
+  width: 100%;
+  margin: 2.5rem 0;
+  &__content {
+    width: $main-width;
+    margin: 0 auto;
+    &-main {
+      @include Reaponsive(tablet) {
+        margin-top: 8rem;
+        flex-direction: column;
+        gap: 9rem;
+      }
+      @include centerizeTag(space-between);
+      margin-top: 4rem;
+    }
+    &-item {
+      @include Reaponsive(tablet) {
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+      }
+      width: 20%;
+      @include centerizeTag();
+      flex-direction: column;
+      position: relative;
+    }
+    &-picture {
+      @include Reaponsive(tablet) {
+        height: auto;
+      }
+      width: 80%;
+      height: 23rem;
+      border: 0.2rem solid $color-white;
+      border-radius: 2.5rem;
+      overflow: hidden;
+      z-index: 10;
+    }
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease-in;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &-number {
+      @include Reaponsive(tablet) {
+        top: -6.4rem;
+        left: 8.4rem;
+        width: 7rem;
+        height: 9rem;
+      }
+      width: 5rem;
+      height: 7rem;
+      display: inline-block;
+      background: url(/public/images/number.png) no-repeat;
+      background-size: 300px;
+      position: absolute;
+      top: -3.4rem;
+      left: 1.4rem;
+      &--1 {
+        background-position: 0 0;
+      }
+      &--2 {
+        background-position: -56px 0;
+      }
+      &--3 {
+        background-position: -117px 0;
+      }
+      &--4 {
+        background-position: -185px 0;
+      }
+      &--5 {
+        background-position: -255px 0;
+      }
+    }
+    &-subtitle {
+      text-align: center;
+      margin-top: 1.5rem;
+      &-head {
+        @include Reaponsive(tablet) {
+          font-size: 1.4rem;
+        }
+        color: $color-white;
+        font-weight: bold;
+        margin-top: 1.2rem;
+      }
+      &-positions {
+        margin-top: 0.8rem;
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+      &-position {
+        color: $color-subtitle;
+      }
+      &-rate {
+        color: $color-white;
+      }
+    }
+  }
+}

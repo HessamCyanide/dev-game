@@ -1,0 +1,82 @@
+.footer {
+  @include Reaponsive(tablet) {
+    margin-bottom: 9rem;
+  }
+  width: 100%;
+  padding: 3rem 0;
+  background-color: $color-primary;
+  margin-top: 2.5rem;
+  &__content {
+    @include at-max(610px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.75rem;
+    @include centerizeTag(space-between);
+    &-logo {
+      @include Reaponsive(phoneL) {
+        display: none;
+      }
+    }
+    &-item {
+    }
+    &-pic {
+      @include centerizeTag();
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &-img {
+      @include Reaponsive(tablet) {
+        width: 11rem;
+      }
+      width: 15rem;
+    }
+    &-sublogo {
+      color: $color-white;
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+    &-list {
+      @include centerizeTag();
+      gap: 2.5rem;
+      font-size: $font-size-default;
+      font-weight: bold;
+      color: $color-subtitle;
+      margin: 0;
+    }
+    &-copy {
+      @include centerizeTag();
+      font-size: $font-size-default;
+      font-weight: bold;
+      color: $color-subtitle;
+    }
+    &-socialmedia {
+      @include centerizeTag();
+      gap: 1.5rem;
+    }
+    &-social {
+      width: 4.5rem;
+      height: 4.5rem;
+      background-color: $color-bg;
+      border-radius: 0.5rem;
+      @include centerizeTag();
+      box-shadow: 0 0 0.5rem $color-shaddow;
+      transition: all 0.4s ease-in;
+      cursor: pointer;
+      &:hover {
+        transform: translateY(-0.5rem);
+        .footer__content-icon {
+          transform: rotateY(360deg);
+          color: $color-secondry;
+        }
+      }
+    }
+    &-icon {
+      color: $color-white;
+      font-size: 2rem;
+      transition: all 0.4s ease-in;
+    }
+  }
+}

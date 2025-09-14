@@ -1,0 +1,164 @@
+//*--------------------------- SideBar Style---------------------------------//
+.sidebar {
+  @include Reaponsive(tabletL) {
+    width: 19%;
+  }
+  @include Reaponsive(tablet) {
+    display: none;
+  }
+  width: 17%;
+  padding-bottom: 1.5rem;
+  background-color: $color-primary;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-radius: 0 1.5rem 1.5rem 0;
+  //*--------------------------- SideBar Playtoo Style---------------------------------//
+  &__playtoo {
+    padding: 2.5rem;
+    @include centerizeTag();
+    flex-direction: column;
+
+    &-img {
+      width: 55%;
+    }
+    &-text {
+      color: $color-white;
+      font-size: $font-size-title;
+      margin-top: 1.5rem;
+    }
+  }
+  //*--------------------------- SideBar Filter Style---------------------------------//
+  &__filter {
+    border-bottom: 0.3rem solid $color-black;
+    &-title {
+      width: 95%;
+      padding: 20px;
+      background-color: $color-secondry;
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+    &-text {
+      color: $color-white;
+      display: block;
+      text-align: end;
+      font-size: 1.6rem;
+      font-weight: 60rem;
+      letter-spacing: 0.2rem;
+    }
+    &-list {
+      width: 100%;
+    }
+    &-items {
+      width: 80%;
+      margin: 1.5rem auto;
+    }
+    &-item {
+      width: 100%;
+      padding: 1rem 0;
+      @include centerizeTag(flex-start);
+      opacity: 0.6;
+      gap: 1rem;
+      color: $color-filter;
+      transition: all 0.3s ease-in;
+      &:hover {
+        color: $color-white;
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+    &-icon {
+      width: 4.5rem;
+      height: 5rem;
+      background: url(../../public/images/sidebar-slider.png) no-repeat;
+      background-size: cover;
+      &--1 {
+        background-position: -3.9rem 0;
+      }
+      &--2 {
+        background-position: 0 0;
+      }
+      &--3 {
+        background-position: -15.9rem 0;
+      }
+      &--4 {
+        background-position: -8rem 0;
+      }
+      &--5 {
+        background-position: -11.7rem 0;
+      }
+    }
+    &-txt {
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+  }
+  //*--------------------------- SideBar Friends Style---------------------------------//
+  &__friends {
+    padding: 2.5rem 0;
+    &-content {
+      width: 80%;
+      margin: 1rem auto;
+    }
+    &-head {
+      width: 100%;
+      color: $color-white;
+    }
+    &-items {
+      margin-top: 1.5rem;
+    }
+    &-item {
+      width: 100%;
+      margin-bottom: 1.5rem;
+      @include centerizeTag(space-between);
+    }
+    &-info {
+      @include centerizeTag(flex-start);
+      gap: 1rem;
+    }
+    &-image {
+      width: 4rem;
+      height: 4rem;
+      border: 0.1rem solid $color-white;
+      border-radius: 100%;
+    }
+    &-pic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-text {
+      color: $color-filter;
+      font-size: 1.4rem;
+    }
+    &-box {
+      width: 6rem;
+      @include centerizeTag();
+    }
+    &-icon {
+      color: $color-filter;
+    }
+    &-circle {
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: green;
+      border-radius: 100%;
+    }
+  }
+  //*--------------------------- SideBar Rocket Style---------------------------------//
+  &__rocket {
+    width: 80%;
+    margin: 1.5rem auto;
+    transition: all 0.2s ease-in;
+    &:hover {
+      border: 0.2rem solid $color-secondry;
+      padding: 0.2rem;
+      cursor: pointer;
+      border-radius: 1rem;
+    }
+    &-pic {
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
+}

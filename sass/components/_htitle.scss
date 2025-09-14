@@ -1,0 +1,55 @@
+.h-title {
+  @include Reaponsive(tablet) {
+    justify-content: center;
+    gap: 5rem;
+  }
+  @include centerizeTag(space-between);
+
+  &__title {
+  }
+  &__list {
+    @include centerizeTag();
+    gap: 15px;
+  }
+  &__item {
+    @include Reaponsive(phone) {
+      font-size: 1.3rem;
+    }
+    @include at-max(392px) {
+      font-size: 1.1rem;
+    }
+    font-size: $font-size-default;
+    color: $color-white;
+    font-weight: bold;
+    padding-top: 10px;
+    &.active {
+      color: $color-secondry;
+      border-top: 2px solid $color-secondry;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__btns {
+    @include Reaponsive(tablet) {
+      display: none;
+    }
+    @include centerizeTag();
+    gap: 10px;
+  }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    color: $color-white;
+    @include centerizeTag();
+    border-radius: 6px;
+    &.active {
+      background-color: $color-secondry;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__icon {
+  }
+}

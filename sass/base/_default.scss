@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  @include Reaponsive(tablet) {
+    font-size: 50%;
+  }
+  @include Reaponsive(phone) {
+    font-size: 38%;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: $color-bg;
+  font-family: $font-poppins;
+}
+a {
+  text-decoration: none;
+}
