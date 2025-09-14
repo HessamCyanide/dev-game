@@ -587,7 +587,7 @@ a {
   position: relative;
 }
 .header__content-bell-icon {
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #fff;
 }
 .header__content-bell-circle {
@@ -625,7 +625,6 @@ a {
 .header__content-user-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .slider {
