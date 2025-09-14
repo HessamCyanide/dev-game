@@ -441,7 +441,7 @@ a {
 .sidebar__filter-icon {
   width: 4.5rem;
   height: 5rem;
-  background: url(images/sidebar-slider.png) no-repeat;
+  background: url(../images/sidebar-slider.png) no-repeat;
   background-size: cover;
 }
 .sidebar__filter-icon--1 {
