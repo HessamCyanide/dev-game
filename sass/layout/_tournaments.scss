@@ -281,7 +281,7 @@
         font-size: 2rem;
       }
       @include Reaponsive(tablet) {
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
       text-wrap: nowrap;
       color: $color-white;
