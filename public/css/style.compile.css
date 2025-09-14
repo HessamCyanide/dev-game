@@ -617,10 +617,6 @@ a {
 }
 .header__content-user-pic {
   width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 100%;
-  border: 0.1rem solid #0761dc;
-  padding: 0.1rem;
 }
 .header__content-user-img {
   width: 100%;
