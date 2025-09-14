@@ -1248,12 +1248,18 @@ a {
   gap: 0.5rem;
 }
 .tournaments__info-team {
+  text-wrap: nowrap;
   color: #fff;
   font-weight: bold;
 }
 @media only screen and (max-width: 112.5em) {
   .tournaments__info-team {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 62em) {
+  .tournaments__info-team {
+    font-size: 1rem;
   }
 }
 .tournaments__info-count {

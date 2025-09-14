@@ -280,6 +280,10 @@
       @include Reaponsive(laptop) {
         font-size: 2rem;
       }
+      @include Reaponsive(tablet) {
+        font-size: 1rem;
+      }
+      text-wrap: nowrap;
       color: $color-white;
       font-weight: bold;
     }
