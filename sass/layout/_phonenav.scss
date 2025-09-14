@@ -16,7 +16,7 @@
     align-items: center;
     padding: 2.5rem 2rem 2.5rem 2rem;
     &-items {
-      display: flex;
+      @include centerizeTag();
       flex-direction: column;
       gap: 0.5rem;
     }

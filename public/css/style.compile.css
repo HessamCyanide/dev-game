@@ -1789,6 +1789,8 @@ a {
 }
 .phonenav__content-items {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 0.5rem;
 }
